@@ -1,40 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  Sponsorship Portal
 
-## Getting Started
+A powerful web application built with **Next.js 15**, **TailwindCSS 4**, **Firebase**, and **Cloudflare R2**, designed to manage complex **Finance** and **Deliverables** workflows for multi-department event-based organizations.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+##  Overview
 
-first create .env.local file in the root of your directory 
+This system is a **Finance and Deliverables Tracker** that streamlines the management of **multiple MoUs (Memorandums of Understanding)** between organizations and sponsors. Designed to support both **cash and in-kind contributions**, it enables detailed tracking of financial performance and deliverables across departments.
 
-then go to authform in components , uncomment initialize users button then press it and check the terminal ... the users would be created (you can spam click it until you see all users in firebase )
+Originally developed for **Paradox 25**, a large-scale college fest, the system successfully handled:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- ₹19 Lakhs in cash contributions  
+- ₹60 Lakhs in in-kind deliverables  
+- 43 MoUs from sponsoring companies  
+- 100+ individual deliverables  
+- 40+ users across 12+ departments  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
+![image](https://github.com/user-attachments/assets/9d3fd936-86da-4948-bbb9-0491d557af80)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+##  Tech Stack
 
-## Learn More
+- **Frontend**: [Next.js 15](https://nextjs.org/)  
+- **Styling**: [TailwindCSS 4](https://tailwindcss.com/)  
+- **Backend**: [Firebase](https://firebase.google.com/) (Auth, Firestore, Functions)  
+- **Storage**: [Cloudflare R2](https://developers.cloudflare.com/r2/) for document and proof uploads  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+##  Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+###  Role-Based Access Control
+![image](https://github.com/user-attachments/assets/29e46cb1-a59f-4622-b364-8019b7793710)
+- Support for Admins, Finance, and Department Users
+- Role-based UI and permissions
+- Dynamic user role assignment per department
+-
 
-## Deploy on Vercel
+###  Deliverables Management
+- Track deliverables tied to sponsor MoUs
+- Classify as **standard** or **cost-associated**
+- Assign deliverables to specific departments
+- Status tracking and history logs
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+###  Financial Tracking
+- Manage **cash** and **in-kind** values per MoU
+- Track sponsor commitments and fulfillment
+- Monitor department-specific financial impact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+###  Proof Approval System
+- Upload proofs for each deliverable (image, video, PDF)
+- Cloudflare R2-backed storage with preview and download
+- Multi-level approval workflows
+
+###  Performance Monitoring
+- **Finance Performance**: Track received vs expected contributions  
+- **Department Performance**: Evaluate delivery rates and quality  
+- Real-time dashboard and analytics  
+
+
+---
+
+## 📦 Real-World Use Case
+
+> **Paradox 25** – A major college fest  
+> Managed ₹19L cash + ₹60L in-kind value from 43 sponsors  
+> Supported 12+ departments (e.g., Outreach, Hospitality, Finance, Multimedia, WebOps, Security, Student Relations)  
+> Enabled over 40 users to collaborate on 100+ deliverables with transparent finance and deliverables tracking
+
+---
+
+
